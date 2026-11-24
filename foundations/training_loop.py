@@ -23,6 +23,7 @@ class Solution:
         for _ in range(epochs):
             y_hat = X @ w  + b 
             error = y_hat -y 
+            # Gradient of MSE: (2/N) * X^T (y_hat - y) and (2/N) * sum(y_hat - y)
             grad_w = (2.0/n_samples)*(X.T @ error)
             grad_b = (2.0/ n_samples)*(np.sum(error))
 
