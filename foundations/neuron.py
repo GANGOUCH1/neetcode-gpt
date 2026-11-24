@@ -18,4 +18,4 @@ class Solution:
             out = 1 / ( 1 + np.exp(-z))
         elif activation == "relu":
             out = max(0.0, z)
-        return round(float(out), 5)
+        return round(float(out), 5) 
